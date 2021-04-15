@@ -1,0 +1,11 @@
+.welcome-brand{
+    /* background-image: url("../../../images/flowers-border-isolated-white-background_23-2147874328.jpg"); */
+    background-repeat:no-repeat;
+    position:relative;
+    background-size: cover;
+    background-color: #f1f2f6;
+}
+.image-style{
+    width:70%;
+    padding-left: 100px;
+}
