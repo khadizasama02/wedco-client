@@ -1,0 +1,9 @@
+.footer-design{
+    text-decoration: none;
+}
+.footer-brand{
+    background-image: url("../../../images/fluor-organic-minimalist-background_91008-244.jpg");
+    background-repeat:no-repeat;
+    position:relative;
+    background-size: cover;
+}

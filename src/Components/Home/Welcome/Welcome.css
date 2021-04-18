@@ -3,7 +3,7 @@
     background-repeat:no-repeat;
     position:relative;
     background-size: cover;
-    background-color: #f1f2f6;
+    /* background-color: #f1f2f6; */
 }
 .image-style{
     width:70%;

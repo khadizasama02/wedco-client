@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
+import { UserContext } from "../../../App";
 
 const Navbar = () => {
+  const [,,loggedInUser,] = useContext(UserContext)
   return (
     <div >
       <nav class="navbar navbar-expand-lg navbar-light ">
@@ -31,13 +33,13 @@ const Navbar = () => {
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                 <span  style={{color:'#dff9fb'}}> Page</span>
+                <a class="nav-link" href="/dashboard">
+                 <span  style={{color:'#dff9fb'}}> Admin</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span  style={{color:'#dff9fb'}}> Page</span>
+                <a class="nav-link" href="/login">
+                  <span  style={{color:'#dff9fb'}}> {(loggedInUser.email)?(loggedInUser.displayName):'Login'}</span>
                 </a>
               </li>
               
