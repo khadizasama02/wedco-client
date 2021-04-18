@@ -1,11 +1,12 @@
 import React from 'react';
 import Sidebar from '../../Sidebar/Sidebar';
+import UserOrder from '../../UserOrder/UserOrder';
 import AddService from '../AddService/AddService';
 
 const Dashboard = () => {
     return (
         <div>
-        <AddService></AddService>
+        <UserOrder></UserOrder>
             </div>
       
     );

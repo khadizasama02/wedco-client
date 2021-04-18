@@ -5,8 +5,8 @@ const OrderView = (props) => {
     const {booking,displayName,email}=props.order;
     console.log(props.order);
     return (
-        <div >
-             <tr>
+       
+      <tr>
       
       <td>{displayName}</td>
       <td>{email}</td>
@@ -16,7 +16,7 @@ const OrderView = (props) => {
      
 
     </tr>
-        </div>
+        
     );
 };
 

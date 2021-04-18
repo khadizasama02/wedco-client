@@ -18,6 +18,7 @@ import ManageAdmin from './Components/ManageAdmin/ManageAdmin';
 import OrderDetails from './Components/OrderDetails/OrderDetails';
 import AddReview from './Components/AddReview/AddReview';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import UserOrder from './Components/UserOrder/UserOrder';
 
   
 
@@ -56,7 +57,11 @@ function App() {
 
         </Route>
         <Route  path="/review">
-         <AddReview></AddReview>>
+         <AddReview></AddReview>
+
+        </Route>
+        <Route  path="/userOrder">
+         <UserOrder></UserOrder>
 
         </Route>
         <Route  path="/order/:_id">

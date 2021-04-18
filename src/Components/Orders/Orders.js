@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { useForm } from 'react-hook-form';
 import { useParams } from 'react-router';
 import { UserContext } from '../../App';
+import PaymentProcess from '../PaymentProcess/PaymentProcess';
 
 const Orders = () => {
     const {_id} = useParams();
@@ -30,10 +31,11 @@ const Orders = () => {
         })
     };
     return (
-        <div>
-            <h1>this is order page</h1>
-             <div>
-             <form onSubmit={handleSubmit(onSubmit)}>
+        <div class="row m-5">
+           
+         <div class="card col-md-6 text center ">
+             <h1>Place Your Order</h1>
+         <form onSubmit={handleSubmit(onSubmit)}>
       <h4>Name</h4>
       <input type="text" defaultValue={loggedInUser.displayName} {...register("name")} />
       
@@ -45,9 +47,14 @@ const Orders = () => {
       <input type="text" placeholder="enter your phone number"{...register("Address", { required: true })} />
 
       {errors.exampleRequired && <span>This field is required</span>}
-      
-      <input type="submit" />
+      <br/>
+      <br/>
+      <input type="submit" class="btn button"/>
     </form>
+        </div>
+        <div class="col-md-5 card mx-auto" >
+            
+            <PaymentProcess></PaymentProcess>
         </div>
         </div>
     );
