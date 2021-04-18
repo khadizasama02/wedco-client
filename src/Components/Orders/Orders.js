@@ -16,7 +16,7 @@ const Orders = () => {
         const orderDetail = {
             ...loggedInUser,booking,orderDetail:data,orderTime:new Date()
         }
-        fetch('http://localhost:5055/addOrder',{
+        fetch('https://gentle-waters-37437.herokuapp.com/addOrder',{
             method:'POST',
             headers:{
                 'Content-Type':'application/JSON'

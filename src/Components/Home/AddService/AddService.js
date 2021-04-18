@@ -14,7 +14,7 @@ const AddService = () => {
           price:data.price,
           imageUrl: imageUrl
       };
-      const url = `http://localhost:5055/addService`;
+      const url = `https://gentle-waters-37437.herokuapp.com/addService`;
 
       console.log(eventData)
       fetch(url,{

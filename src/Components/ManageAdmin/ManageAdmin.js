@@ -13,7 +13,7 @@ const ManageAdmin = () => {
           email: data.email
       }
 console.log(data);
-      const url = `http://localhost:5055/addAdmin`;
+      const url = `https://gentle-waters-37437.herokuapp.com/addAdmin`;
 
     //   console.log(adminData)
       fetch(url,{

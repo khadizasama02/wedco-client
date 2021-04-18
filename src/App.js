@@ -28,7 +28,7 @@ function App() {
   const [loggedInUser,setLoggedInUser] = useState({});
   const [service,setService] = useState([]);
   useEffect(()=>{
-    fetch('http://localhost:5055/service')
+    fetch('https://gentle-waters-37437.herokuapp.com/service')
     .then(res=>res.json())
     .then(data=>setService(data))
        
